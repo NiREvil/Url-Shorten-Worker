@@ -146,6 +146,7 @@
     function syncKeyValue() {
       // 文件名中的空格转换为"-"连字符
       // 文件名中的 # 字符 转换为"-"连字符
+      // 文件名中的 # 字符 转换为"-"连字符
       document.getElementById('keyPhrase').value = document.getElementById('input_file').files[0].name.replace(/\s/g, "-").replace(/#/g, "-");
       document.getElementById('longURL').value = document.getElementById('area_base64').value;
       // 触发input事件
