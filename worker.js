@@ -1,6 +1,6 @@
 const config = {
   result_page: false, // After get the value from KV, if use a page to show the result.
-  theme: "", // Homepage theme, use the empty value for default theme. To use urlcool theme, please fill with "theme/urlcool" .
+  theme: "theme/urlcool", // Homepage theme, use the empty value for default theme. To use urlcool theme, please fill with "theme/urlcool" .
   cors: true, // Allow Cross-origin resource sharing for API requests.
   unique_link: false, // If it is true, the same long url will be shorten into the same short url
   custom_link: true, // Allow users to customize the short url.
@@ -16,15 +16,15 @@ const protect_keylist = [
   "password",
 ]
 
-let index_html = "https://crazypeace.github.io/Url-Shorten-Worker/" + config.theme + "/index.html"
-let result_html = "https://crazypeace.github.io/Url-Shorten-Worker/" + config.theme + "/result.html"
+let index_html = "https://NiREvil.github.io/Url-Shorten-Worker/" + config.theme + "/index.html"
+let result_html = "https://NiREvil.github.io/Url-Shorten-Worker/" + config.theme + "/result.html"
 
 const html404 = `<!DOCTYPE html>
   <html>
   <body>
     <h1>404 Not Found.</h1>
     <p>The url you visit is not found.</p>
-    <p> <a href="https://github.com/crazypeace/Url-Shorten-Worker/" target="_self">Fork me on GitHub</a> </p>
+    <p> <a href="https://github.com/NiREvil/Url-Shorten-Worker/" target="_self">Follow me on GitHub</a> </p>
   </body>
   </html>`
 
