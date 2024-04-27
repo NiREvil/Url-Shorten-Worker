@@ -24,7 +24,7 @@ const html404 = `<!DOCTYPE html>
   <body>
     <h1>404 Not Found.</h1>
     <p>The url you visit is not found.</p>
-    <p> <a href="https://github.com/crazypeace/Url-Shorten-Worker/" target="_self">Fork me on GitHub</a> </p>
+    <p> <a href="https://github.com/NiREvil" target="_self">My GitHub account </a> </p>
   </body>
   </html>`
 
@@ -294,7 +294,7 @@ async function handleRequest(request) {
   // 如果path为空, 即直接访问本worker
   // If visit this worker directly (no path)
   if (!path) {
-    return Response.redirect("https://zelikk.blogspot.com/search/label/Url-Shorten-Worker", 302)
+    return Response.redirect("https://seriously-why.revil.workers.dev", 302)
     /* new Response(html404, {
       headers: response_header,
       status: 404
